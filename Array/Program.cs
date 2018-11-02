@@ -10,16 +10,17 @@ namespace Array
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Пример работы с массивами \n");
-            Console.WriteLine("\nВведите длинну строки (натуральное число)");
+            Console.WriteLine("\nВведите длинну строки (натуральное число)\n");
             int x = int.Parse(Console.ReadLine());
             
-            Console.WriteLine("\nВведите длинну столбца (натуральное число)");
+            Console.WriteLine("\nВведите длинну столбца (натуральное число)\n");
             int y = int.Parse(Console.ReadLine());
 
             int[,] arr1 = new int[x, y];
 
-            Console.WriteLine("\nЗаполните таблицу первого массива");
+            Console.WriteLine("\nЗаполните таблицу первого массива\n");
 
             for (int i = 0; i < x; i++)
             {
@@ -33,7 +34,7 @@ namespace Array
 
             int[,] arr2 = new int[x, y];
 
-            Console.WriteLine("\nЗаполните таблицу второго массива");
+            Console.WriteLine("\nЗаполните таблицу второго массива\n");
 
             for (int i = 0; i < x; i++)
             {
@@ -55,7 +56,7 @@ namespace Array
 
             }
 
-            Console.WriteLine();
+            Console.WriteLine("\nСумма массивов:\n");
             for (int i = 0; i < x; i++)
             {
                 for (int j = 0; j < y; j++)
